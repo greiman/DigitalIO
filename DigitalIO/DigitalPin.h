@@ -385,6 +385,23 @@ static const pin_map_t pinMap[] = {
   {&DDRF, &PINF, &PORTF, 7}   // F7 45
 };
 //------------------------------------------------------------------------------
+#elif defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
+static const pin_map_t pinMap[] = {
+  {&DDRB, &PINB, &PORTB, 0},  // D0
+  {&DDRB, &PINB, &PORTB, 1},  // D1
+  {&DDRB, &PINB, &PORTB, 3},  // D2
+  {&DDRA, &PINA, &PORTA, 7},  // D3
+  {&DDRA, &PINA, &PORTA, 6},  // D4
+  {&DDRA, &PINA, &PORTA, 5},  // D5
+  {&DDRA, &PINA, &PORTA, 4},  // D6
+  {&DDRA, &PINA, &PORTA, 3},  // D7
+  {&DDRA, &PINA, &PORTA, 2},  // D8
+  {&DDRA, &PINA, &PORTA, 1},  // D9
+  {&DDRA, &PINA, &PORTA, 0},  // D10
+  //{&DDRB, &PINB, &PORTB, 2},  // RESET 2
+};
+//------------------------------------------------------------------------------
+
 #else  // CPU type
 #error unknown CPU type
 #endif  // CPU type
