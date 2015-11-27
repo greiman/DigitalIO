@@ -1,8 +1,11 @@
-#include <DigitalIO.h>
 // Create object for pin 13 in output mode and demo toggle().
-DigitalPin<13> pin13(OUTPUT);
+#include "DigitalIO.h"
 
-void setup() {}
+DigitalPin<13> pin13;
+
+void setup() {
+ pin13.mode(OUTPUT);
+}
 
 void loop() {
   // toggle is a two byte instruction that executes

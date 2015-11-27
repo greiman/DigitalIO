@@ -1,6 +1,6 @@
 #ifndef MCP355X_h
 #define MCP355X_h
-#include <DigitalIO.h>
+#include "DigitalIO.h"
 // Overflow values.
 const int32_t MCP355X_OVH =  2097152L;
 const int32_t MCP355X_OVL = -2097153L;

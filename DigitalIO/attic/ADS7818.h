@@ -1,5 +1,5 @@
 #ifndef ADS7818_h
-#define ADS7871_h
+#define ADS7818_h
 //------------------------------------------------------------------------------
 /** nop to tune soft SPI timing */
 #define nop asm volatile ("nop\n\t")

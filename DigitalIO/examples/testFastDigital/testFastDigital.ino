@@ -1,5 +1,5 @@
 // Test fastDigital function timing with a scope.
-#include <DigitalIO.h>
+#include "DigitalIO.h"
 const uint8_t PIN = 13;
 void setup() {
   fastPinMode(PIN, OUTPUT);

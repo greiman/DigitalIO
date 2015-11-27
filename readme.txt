@@ -1,5 +1,6 @@
-A library for fast digital I/O, software SPI and software I2C on
-AVR Arduinos. 
+This version has support for Due and Teensy 3.x in the SoftSPI and DigitalPin classes.
+
+PinIO and I2C classes are only supported on AVR.
 
 To install this library, copy the DigitalIO folder to your libraries folder.
 
@@ -24,8 +25,7 @@ PinIO has two versions of write. PinIO::writeI() must be used with
 interrupts disabled since it will not be atomic if interrupts are
 enabled.  PinIO::writeI() is faster than the PinIO::write() function.
 
-PinIO::write() must be used with interrupts enabled since it disables interrupt
-before accessing the pin and then enables interrupts.
+PinIO::write() can be used with interrupts enabled or disabled.
 
 A software SPI class is included in SoftSPI.h.  The only
 example for SoftSPI is a scope test for development.
@@ -43,6 +43,8 @@ DigitalPinConfigToggle - Demonstrate the config() and toggle() member functions.
 DigitalPinReadWrite - Read pin 12 and write pin 13 using DigitalPin.
 
 DigitalPinShiftOut - Scope test for fast shiftOut function.
+
+GpioPinMap - Generate a GpioPinMap file for a new board.
 
 PinIOBegin - Use begin to assign pin numbers.
 

@@ -1,5 +1,7 @@
 // Scope test for PinIO class write timing.
-#include <DigitalIO.h>
+//
+#ifdef __AVR__
+#include "DigitalIO.h"
 
 // Class with runtime pin numbers.
 PinIO pin(13);
@@ -17,3 +19,6 @@ void loop() {
   pin.toggle();
   delay(1);
 }
+#else  // __AVR__
+#error AVR only example
+#endif  // __AVR__

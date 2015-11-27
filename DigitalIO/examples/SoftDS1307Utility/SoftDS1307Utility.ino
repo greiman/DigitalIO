@@ -1,7 +1,7 @@
 // Utility sketch to explore DS1307 and demonstrate software I2C Master.
 //
-
-#include <DigitalIO.h>
+#ifdef __AVR__
+#include "DigitalIO.h"
 
 // Set pin numbers for your configuration.
 const uint8_t SDA_PIN = A4;
@@ -322,3 +322,6 @@ void loop(void) {
     PgmPrintln("Invalid option");
   }
 }
+#else  // __AVR__
+#error AVR only example
+#endif  // __AVR__

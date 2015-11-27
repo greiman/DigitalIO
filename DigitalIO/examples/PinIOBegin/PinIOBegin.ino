@@ -1,6 +1,7 @@
 // Use begin to assign pin numbers.
 // Read pin 12 and write the value to pin 13.
-#include <DigitalIO.h>
+#ifdef __AVR__
+#include "DigitalIO.h"
 
 // Declare the PinIO instances.
 PinIO readPin;
@@ -22,3 +23,6 @@ void loop() {
   // Copy the value read from readPin to writePin.
   writePin.write(readPin.read());
 }
+#else  // _AVR__
+#error AVR only example
+#endif  // __AVR__

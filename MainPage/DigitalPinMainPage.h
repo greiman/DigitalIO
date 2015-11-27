@@ -19,13 +19,19 @@
  */
 /**
 @mainpage Arduino %DigitalIO Library
-<CENTER>Copyright &copy; 2013 by William Greiman
+<CENTER>Copyright &copy; 2012-2015 by William Greiman
 </CENTER>
 
 @section Intro Introduction
 
 The DigitalIO library has a number of classes and functions for fast
 digital I/O for AVR ports plus fast software I2C and SPI.
+
+@section newBoard Adding New Boards
+
+The GpioPinMap example will generate the content for a new AVR board.
+You must add the file to libraries/DigitalIO/src/boards and edit
+GpioPinMap.h to include the new file.
 
 @section pinToggle Pin Toggle Functions
 

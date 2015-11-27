@@ -1,5 +1,5 @@
 // Scope test for development - assumes 328 processor.
-#include <DigitalIO.h>
+#include "DigitalIO.h"
 
 const uint8_t SOFT_SPI_MISO_PIN = 7;
 const uint8_t SOFT_SPI_MOSI_PIN = 8;

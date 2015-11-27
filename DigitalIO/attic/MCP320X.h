@@ -1,6 +1,6 @@
 #ifndef MCP320X_h
 #define MCP320X_h
-#include <DigitalIO.h>
+#include "DigitalIO.h"
 //==============================================================================
 template<uint8_t CsPin, uint8_t ClkPin, uint8_t DoutPin, uint8_t UsecDelay = 0>
 class MCP3201 {

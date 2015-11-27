@@ -1,12 +1,8 @@
 // Scope test for fast shiftOut function.
-#include <DigitalIO.h>
+#include "DigitalIO.h"
 
-// Create clockPin in output mode with inital level LOW.
-DigitalPin<12> clockPin(OUTPUT, LOW);
-
-// Create dataPin in output mode with inital level HIGH.
-DigitalPin<13> dataPin(OUTPUT, HIGH);
-
+DigitalPin<12> clockPin;
+DigitalPin<13> dataPin;
 //------------------------------------------------------------------------------
 // Time to send one bit is ten cycles or 625 ns for 16 MHz CPU.
 inline __attribute__((always_inline))
@@ -30,7 +26,11 @@ void shiftOut(uint8_t bits) {
 }
 //------------------------------------------------------------------------------
 void setup() {
-  // Not used.
+  // clockPin in output mode with inital level LOW.
+  clockPin.config(OUTPUT, LOW);
+  
+  // dataPin in output mode with inital level HIGH.
+  dataPin.config(OUTPUT, HIGH);
 }
 //------------------------------------------------------------------------------
 void loop() {

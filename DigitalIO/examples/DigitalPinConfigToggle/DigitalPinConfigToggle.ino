@@ -1,5 +1,5 @@
 // Demo of config() and fast toggle() function.
-#include <DigitalIO.h>
+#include "DigitalIO.h"
 
 // Class with compile time pin number.
 DigitalPin<13> pin13;

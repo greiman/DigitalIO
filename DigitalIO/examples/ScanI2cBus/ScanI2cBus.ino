@@ -17,7 +17,8 @@
  * address that ACKs, there is a chance to NACK the read
  * and properly end the I2C transaction.
  */
-#include <DigitalIO.h>
+#ifdef __AVR__
+#include "DigitalIO.h"
 
 // Set pin numbers for your configuration.
 const uint8_t SDA_PIN = A4;
@@ -73,6 +74,9 @@ void setup() {
 void loop() {
   // Not used.
 }
+#else  // __AVR__
+#error AVR only example
+#endif  // __AVR__
 
 
 
