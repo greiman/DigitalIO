@@ -1,5 +1,10 @@
 #ifndef SleepingBeautyGpioPinMap_h
 #define SleepingBeautyGpioPinMap_h
+
+#ifndef NUM_DIGITAL_PINS
+#define NUM_DIGITAL_PINS 32
+#endif
+
 static const GpioPinMap_t GpioPinMap[] = {
   GPIO_PIN(D, 0),  // D0
   GPIO_PIN(D, 1),  // D1

@@ -31,6 +31,7 @@
 #include <Arduino.h>
 #include <util/atomic.h>
 #include <avr/io.h>
+#include <GpioPinMap.h>
 //------------------------------------------------------------------------------
 /**
  * @class PinIO

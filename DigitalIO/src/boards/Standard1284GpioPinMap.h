@@ -1,5 +1,10 @@
 #ifndef Standard1284GpioPinMap_h
 #define Standard1284GpioPinMap_h
+
+#ifndef NUM_DIGITAL_PINS
+#define NUM_DIGITAL_PINS 32
+#endif
+
 static const GpioPinMap_t GpioPinMap[] = {
   GPIO_PIN(B, 0),  // D0
   GPIO_PIN(B, 1),  // D1

@@ -19,7 +19,10 @@
  */
 #ifndef GpioPinMap_h
 #define GpioPinMap_h
-#if defined(__AVR_ATmega168__)\
+#if defined(__AVR_ATtiny45__)\
+||defined(__AVR_ATtiny85__)
+#include "ATtiny85GpioPinMap.h"
+#elif defined(__AVR_ATmega168__)\
 ||defined(__AVR_ATmega168P__)\
 ||defined(__AVR_ATmega328P__)
 // 168 and 328 Arduinos

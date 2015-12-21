@@ -1,5 +1,10 @@
 #ifndef MegaGpioPinMap_h
 #define MegaGpioPinMap_h
+
+#ifndef NUM_DIGITAL_PINS
+#define NUM_DIGITAL_PINS 70
+#endif
+
 static const GpioPinMap_t GpioPinMap[] = {
   GPIO_PIN(E, 0),  // D0
   GPIO_PIN(E, 1),  // D1
