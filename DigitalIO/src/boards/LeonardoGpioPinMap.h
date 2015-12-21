@@ -1,5 +1,10 @@
 #ifndef LeonardoGpioPinMap_h
 #define LeonardoGpioPinMap_h
+
+#ifndef NUM_DIGITAL_PINS
+#define NUM_DIGITAL_PINS 30
+#endif
+
 static const GpioPinMap_t GpioPinMap[] = {
   GPIO_PIN(D, 2),  // D0
   GPIO_PIN(D, 3),  // D1
