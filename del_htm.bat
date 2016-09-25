@@ -1,2 +1,0 @@
-rm -R html/*
-pause
