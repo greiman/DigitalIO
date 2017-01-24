@@ -1,0 +1,13 @@
+{
+  "name": "DigitalIO",
+  "keywords": "digitalio, digital, io, softspi",
+  "description": "Fast Digital I/O, Software I2C, and Software SPI for AVR Arduino",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/greiman/DigitalIO.git"
+  },
+  "include": "DigitalIO",
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
