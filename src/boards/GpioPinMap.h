@@ -28,6 +28,9 @@
 ||defined(__AVR_ATmega328P__)
 // 168 and 328 Arduinos
 #include "UnoGpioPinMap.h"
+#elif defined(__AVR_ATmega328PB__)\
+// ATmega328PB (as supported by MiniCore)
+#include "ATmega328pbGpioPinMap.h"
 #elif defined(__AVR_ATmega1280__)\
 || defined(__AVR_ATmega2560__)
 // Mega ADK
