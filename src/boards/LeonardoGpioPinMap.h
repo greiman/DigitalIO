@@ -30,6 +30,7 @@ static const GpioPinMap_t GpioPinMap[] = {
   GPIO_PIN(B, 4),  // D26
   GPIO_PIN(B, 5),  // D27
   GPIO_PIN(B, 6),  // D28
-  GPIO_PIN(D, 6)   // D29
+  GPIO_PIN(D, 6),  // D29
+  GPIO_PIN(D, 5)   // D30
 };
 #endif  // LeonardoGpioPinMap_h

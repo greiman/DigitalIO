@@ -19,11 +19,18 @@
  */
 #ifndef GpioPinMap_h
 #define GpioPinMap_h
-#if defined(__AVR_ATmega168__)\
+#if defined(__AVR_ATmega88__)\
+||defined(__AVR_ATmega88A__)\
+||defined(__AVR_ATmega88P__)\
+||defined(__AVR_ATmega88PA__)\
+||defined(__AVR_ATmega168__)\
 ||defined(__AVR_ATmega168P__)\
 ||defined(__AVR_ATmega328P__)
 // 168 and 328 Arduinos
 #include "UnoGpioPinMap.h"
+#elif defined(__AVR_ATmega328PB__)\
+// ATmega328PB (as supported by MiniCore)
+#include "ATmega328pbGpioPinMap.h"
 #elif defined(__AVR_ATmega1280__)\
 || defined(__AVR_ATmega2560__)
 // Mega ADK
