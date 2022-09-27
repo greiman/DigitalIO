@@ -25,8 +25,8 @@
 #ifndef DigitalIO_h
 #define DigitalIO_h 1
 //------------------------------------------------------------------------------
-/** DigitalPin version YYYYMMDD */
-#define DIGITAL_IO_VERSION 20151127
+/** DigitalPin version  */
+#define DIGITAL_IO_VERSION 100001
 //------------------------------------------------------------------------------
 #include "DigitalPin.h"
 #include "I2cConstants.h"
